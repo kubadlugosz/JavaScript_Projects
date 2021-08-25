@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Program</title>
+
+    <link rel="stylesheet" href="/home/jakub/JavaScript/Challenges/css/abc.css" type="text/css" />
+    
+</head>
+
+<body>
+    <h2 class ='challenge'>Challenge 1: Your Age in Days</h2>
+    <!-- now we set a container for the buttons called container1-->
+    <div class = 'container1'>
+        <div id ='Buttons'>
+            <button id ='clickMe'>Click me</button>
+            <button   id = 'resetButton'>Reset</button>
+
+        </div>
+
+        <div id = 'dateBtn'>
+
+        </div>
+
+    </div>
+    <h2 class = 'challenge'>Challenge 2: Cat Generator</h2>
+    <div class = 'container2'>
+        <div>
+            <button type = 'text' onclick ="generateCat()">Generate Cats</button>
+        </div>
+        <div id="cats">
+            
+        </div>
+
+    </div>
+
+    <h2 class = 'challenge'>Challenge 3: Rock, Paper, Scissors</h2>
+    <div class = 'container3'>
+        <div id = 'gameButtons'>
+            <input class = 'gameButtons' id ='rock' type="image" src="/home/jakub/JavaScript/Challenges/images/rock.png" style="width:200px;height:200px;" onclick = 'game(this)'/>
+            <input class = 'gameButtons' id ='paper' type="image" src='/home/jakub/JavaScript/Challenges/images/paper.png' style="width:200px;height:200px;" onclick = 'game(this)'>
+            <input class = 'gameButtons' id ='scissors' type="image" src='/home/jakub/JavaScript/Challenges/images/scissors.jpg' style="width:200px;height:200px;" onclick = 'game(this)'>
+        </div>
+
+    </div>
+    <div id = 'scoreBoard'>
+        <h2 id = 'scoreBoardTitle'>Score Board</h2>
+        <h2 id = 'humanScore'>Player Score:</h2>
+        <h2 id = 'cpuScore'>CPU Score:</h2>
+    </div>
+
+    <h2 class = 'challenge'>Challenge 4: Change Color of All Buttons </h2>
+    <div class ='container-4'>
+        <div class = 'flex-box-pick-color'>
+            <form action ="">
+                <select name='backdrop' id = 'background' onchange="buttonColorChange(this)">
+                    <option value ='random'>Random</option>
+                    <option value ='red'>Red</option>
+                    <option value ='green'>Green</option>
+                    <option value ='yellow'>Yellow</option>
+                    <option value ='blue'>Blue</option>
+                    <option value ='reset'>Reset</option>
+                </select>
+            </form>
+            <button class ='btn' id = 'bing'>Bing!</button>
+            <button class ='btn'id = 'yahoo'>Yahoo!</button>
+            <button class ='btn'id = 'google'>Google!'</button>
+            <button class ='btn'id = 'facebook'>Facebook!</button>
+        </div>
+    </div>
+
+    <script src = '/home/jakub/JavaScript/Challenges/js/app.js'></script>
+</body>
+</html>
